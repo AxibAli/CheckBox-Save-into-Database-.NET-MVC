@@ -1,0 +1,35 @@
+﻿@model Multiple_CheckBox_Save_into_Database.Models.CheckboxModel
+@{
+    ViewBag.Title = "CheckBoxWork";
+}
+
+<h2>CheckBoxWork</h2>
+@using (Html.BeginForm("CheckBoxWork", "Home", FormMethod.Post))
+{
+
+    @Html.CheckBoxFor(m => m.React, true)
+    <span>React</span>
+    <br />
+    @Html.CheckBoxFor(m => m.JavaScript, true)
+    <span>JavaScript</span>
+    <br />
+    @Html.CheckBoxFor(m => m.PHP, true)
+    <span>PHP</span>
+    <br />
+    @Html.CheckBoxFor(m => m.WordPress, true)
+    <span>WordPress</span>
+    <br />
+    @Html.CheckBoxFor(m => m.MernStack, true)
+    <span>Mern Stack</span>
+    <br />
+    @Html.CheckBoxFor(m => m.Csharp, true)
+    <span>C#</span>
+    <br />
+    @Html.CheckBoxFor(m => m.Python, true)
+    <span>Python</span>
+    <br />
+    @Html.CheckBoxFor(m => m.Swift, true)
+    <span>Swift</span>
+    <br />
+    <input type="submit" value="Save" />
+}
